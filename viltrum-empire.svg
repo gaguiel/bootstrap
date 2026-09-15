@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Império Viltrumita</title>
+  <desc id="desc">Planeta azul escuro com anéis dourados e um símbolo estilizado do Império Viltrumita.</desc>
+  <defs>
+    <radialGradient id="planet" cx="35%" cy="28%" r="75%">
+      <stop offset="0" stop-color="#51769b"/>
+      <stop offset="0.55" stop-color="#1c3555"/>
+      <stop offset="1" stop-color="#090f1c"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" x2="1">
+      <stop offset="0" stop-color="#b17b35"/>
+      <stop offset="0.5" stop-color="#f6c86b"/>
+      <stop offset="1" stop-color="#925b25"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="7"/></filter>
+  </defs>
+  <rect width="900" height="520" fill="#101827"/>
+  <circle cx="740" cy="92" r="2" fill="#f6c86b" opacity=".8"/>
+  <circle cx="120" cy="100" r="3" fill="#f6c86b" opacity=".7"/>
+  <circle cx="180" cy="400" r="2" fill="#f6c86b" opacity=".8"/>
+  <circle cx="810" cy="390" r="2" fill="#f6c86b" opacity=".6"/>
+  <ellipse cx="450" cy="300" rx="360" ry="90" fill="#e9b957" opacity=".12" filter="url(#glow)"/>
+  <ellipse cx="450" cy="300" rx="330" ry="82" fill="none" stroke="url(#ring)" stroke-width="8" transform="rotate(-12 450 300)"/>
+  <ellipse cx="450" cy="300" rx="260" ry="64" fill="none" stroke="#f6c86b" stroke-width="2" opacity=".55" transform="rotate(-12 450 300)"/>
+  <circle cx="450" cy="280" r="170" fill="url(#planet)" stroke="#f6c86b" stroke-width="3"/>
+  <path d="M315 244c60-48 166-54 268-4M304 300c80-27 184-30 292 9M342 366c66-24 125-25 214 1" fill="none" stroke="#7596b4" stroke-width="16" opacity=".24"/>
+  <path d="M450 160v240M330 280h240" stroke="#f6c86b" stroke-width="3" opacity=".45"/>
+  <path d="M450 193l22 63 65 24-65 24-22 63-22-63-65-24 65-24z" fill="#f6c86b"/>
+  <text x="450" y="477" text-anchor="middle" fill="#f6c86b" font-family="Georgia, serif" font-size="24" letter-spacing="7">VILTRUM EMPIRE</text>
+</svg>

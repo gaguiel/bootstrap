@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout Bootstrap 5 - Invencível</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#inicio"><span class="brand-mark">I</span> Invencível</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#personagens">Personagens</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ranking">Ranking</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4 py-lg-5">
+    <!-- Linha 1: col-12 com jumbotron -->
+    <div class="row row-section" id="inicio">
+      <div class="col-12">
+        <section class="jumbotron-custom">
+          <img class="hero-image" src="invencivel.jpg" alt="Invencível em seu uniforme azul e amarelo">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <p class="eyebrow">ARQUIVO DE PODER · GDA</p>
+            <h1 class="display-4 fw-bold">Invencível</h1>
+            <p class="lead">Os personagens mais fortes do universo da série.</p>
+            <a class="btn btn-danger" href="#ranking">Ver ranking <span aria-hidden="true">↓</span></a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Linha 2: duas colunas de tamanho 6 -->
+    <div class="row row-section g-3" id="sobre">
+      <div class="col-12 col-md-6">
+        <article class="card-custom character-feature h-100">
+          <img class="char-img" src="omniman.jpg" alt="Omni-Man usando seu uniforme vermelho e branco">
+          <div class="p-4">
+            <span class="rank-badge">#01</span>
+            <p class="eyebrow">O conquistador</p>
+            <h2>Omni-Man</h2>
+            <p>Um viltrumita com força, velocidade, resistência e séculos de experiência em combate.</p>
+            <span class="power-label">PODER · VILTRUMITA</span>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-md-6">
+        <article class="card-custom character-feature h-100">
+          <img class="char-img" src="invencivel.jpg" alt="Invencível pronto para lutar">
+          <div class="p-4">
+            <span class="rank-badge">#02</span>
+            <p class="eyebrow">O herdeiro</p>
+            <h2>Invencível</h2>
+            <p>Mark Grayson combina poderes viltrumitas, regeneração e uma determinação que cresce a cada batalha.</p>
+            <span class="power-label">PODER · LEGADO</span>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Linha 3: três colunas de tamanho 4 -->
+    <div class="row row-section g-3" id="personagens">
+      <div class="col-12 col-md-4">
+        <article class="card-custom character-small h-100">
+          <img class="char-img" src="conquest.jpg" alt="Conquest, viltrumita veterano">
+          <div class="p-4">
+            <span class="rank-badge">#03</span>
+            <p class="eyebrow">O veterano</p>
+            <h2>Conquest</h2>
+            <p>Um guerreiro viltrumita brutal, conhecido por sua resistência e experiência em guerras.</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-md-4">
+        <article class="card-custom character-small h-100">
+          <img class="char-img empire-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTntmgl5UaPv0xBdB40n_B_Uxe1nTdx03Sotr9LectVUw&s=10" alt="Ilustração do Império Viltrumita com um planeta e anéis dourados">
+          <div class="p-4">
+            <span class="rank-badge">ORIGEM</span>
+            <p class="eyebrow">O império</p>
+            <h2>Viltrumitas</h2>
+            <p>Uma raça guerreira com força sobre-humana, voo, longevidade e resistência extraordinária.</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-md-4">
+        <article class="card-custom character-small h-100">
+          <img class="char-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0qAMC6A_EEF1Rzl4k57-iZS7fAoEmBp0ZL5-PCAfuXQ&s=10" alt="Invencível representando o futuro dos heróis">
+          <div class="p-4">
+            <span class="rank-badge">#05</span>
+            <p class="eyebrow">A evolução</p>
+            <h2>O futuro</h2>
+            <p>Com treinamento e experiência, Mark se aproxima do nível dos maiores guerreiros do universo.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Linha 4: colunas de tamanho 4 e 8 -->
+    <div class="row row-section g-3" id="ranking">
+      <div class="col-12 col-md-4">
+        <aside class="ranking-panel h-100">
+          <p class="eyebrow">Ranking de poder</p>
+          <h2>Os 5 mais fortes</h2>
+          <ol class="power-ranking">
+            <li><span>Thragg</span><small>Regente supremo</small></li>
+            <li><span>Battle Beast</span><small>Guerreiro alienígena</small></li>
+            <li><span>Conquest</span><small>Veterano viltrumita</small></li>
+            <li><span>Omni-Man</span><small>Conquistador de mundos</small></li>
+            <li><span>Invencível</span><small>Herdeiro viltrumita</small></li>
+          </ol>
+        </aside>
+      </div>
+      <div class="col-12 col-md-8">
+        <section class="closing-panel strength-panel h-100">
+          <div>
+            <p class="eyebrow">Por que eles são tão fortes?</p>
+            <h2>A origem define<br><span>o limite do poder.</span></h2>
+            <p>A força na série está ligada principalmente à origem Viltrumita, uma raça alienígena com fisiologia superior à humana, capaz de superforça, voo, resistência a danos extremos e regeneração acelerada. Personagens como Thragg e Conquest representam o topo dessa hierarquia de poder, enquanto Omni-Man e Invencível trazem o conflito entre herança alienígena e valores humanos, tornando a discussão sobre "quem é mais forte" também uma discussão sobre caráter e escolhas dentro da trama.</p>
+          </div>
+          <div class="closing-symbol" aria-hidden="true">I</div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="container pb-4">
+    <div class="footer-line"><span>POWER · DUTY · LEGACY</span><span>Imagens salvas localmente no projeto</span></div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
